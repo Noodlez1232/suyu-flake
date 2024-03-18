@@ -8,8 +8,8 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchFromGitLab {
     owner = "suyu-emu";
     repo = "suyu";
-    rev = "d29f3066c49d9643d39b28ea120fb055ac0cb5fc";
-    hash = "sha256-Cinjo5eP3Aaan6zTvbfmct8HkbS11akgUhsq8EBYILw=";
+    rev = "5e9a855f1ef305d1cb2ec104fbc4347df6a344e1";
+    hash = "sha256-mkj7bw5DjFvmOhTIJlFZYHxgRED0PHjzDLIQ6o/WMlY=";
     fetchSubmodules = true;
   };
 
