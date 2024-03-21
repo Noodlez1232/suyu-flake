@@ -5,12 +5,13 @@ in
 pkgs.stdenv.mkDerivation {
   pname = "suyu";
   version = "unstable-2024-03-10";
-  src = pkgs.fetchFromGitLab {
-    owner = "suyu-emu";
+  src = pkgs.fetchFromGitea {
+    owner = "suyu";
     repo = "suyu";
     rev = "5e9a855f1ef305d1cb2ec104fbc4347df6a344e1";
     hash = "sha256-mkj7bw5DjFvmOhTIJlFZYHxgRED0PHjzDLIQ6o/WMlY=";
     fetchSubmodules = true;
+    domain = "git.suyu.dev";
   };
 
   nativeBuildInputs = with pkgs; [
