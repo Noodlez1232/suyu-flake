@@ -1,17 +1,9 @@
-{ pkgs, nx_tzdb, ... }:
+{ pkgs, nx_tzdb, pname, src, version, ... }:
 let
   lib = pkgs.lib;
 in
 pkgs.stdenv.mkDerivation {
-  pname = "suyu";
-  version = "unstable-2024-03-10";
-  src = pkgs.fetchFromGitLab {
-    owner = "suyu-emu";
-    repo = "suyu";
-    rev = "5e9a855f1ef305d1cb2ec104fbc4347df6a344e1";
-    hash = "sha256-mkj7bw5DjFvmOhTIJlFZYHxgRED0PHjzDLIQ6o/WMlY=";
-    fetchSubmodules = true;
-  };
+  inherit src pname version;
 
   nativeBuildInputs = with pkgs; [
     cmake

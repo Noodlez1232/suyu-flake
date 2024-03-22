@@ -13,11 +13,13 @@
   (system:
   let
     pkgs = import nixpkgs { inherit system; };
+
   in
   {
     packages = {
       nx_tzdb = pkgs.callPackage ./nx_tzdb.nix { };
-      suyu = pkgs.callPackage ./suyu.nix { nx_tzdb = self.packages.${system}.nx_tzdb; };
+      suyu = pkgs.callPackage ./suyu-stable.nix { nx_tzdb = self.packages.${system}.nx_tzdb; };
+      suyu-mainline = pkgs.callPackage ./suyu-mainline.nix { nx_tzdb = self.packages.${system}.nx_tzdb; };
       default = self.packages.${system}.suyu;
     };
   });
