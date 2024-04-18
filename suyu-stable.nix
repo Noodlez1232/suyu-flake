@@ -1,12 +1,12 @@
 { pkgs, nx_tzdb, ... }:
 let
-  version = "v0.0.1";
+  version = "v0.0.3";
   src = pkgs.fetchFromGitea {
     domain = "git.suyu.dev";
     owner = "suyu";
     repo = "suyu";
     rev = version;
-    hash = "sha256-5AO3Ls0/UbUmJ1haweW9hYDta/0Ad7BL+XlMW/Hz870=";
+    hash = "sha256-wLUPNRDR22m34OcUSB1xHd+pT7/wx0pHYAZj6LnEN4g=";
     fetchSubmodules = true;
   };
   

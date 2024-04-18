@@ -1,12 +1,12 @@
 { pkgs, nx_tzdb, ... }:
 let
-  version = "unstable-2024-03-27";
+  version = "unstable-2024-04-17";
   src = pkgs.fetchFromGitea {
     domain = "git.suyu.dev";
     owner = "suyu";
     repo = "suyu";
-    rev = "09578d522b203458d8196001bc5130de8c4e619a";
-    hash = "sha256-OkzDzgons8jOW4NkO6YwzkqwiPJ3GfeTJyB9ZLuaEE0=";
+    rev = "3f76206e9bba0fbb86f62c7a3494bd2f985e8524";
+    hash = "sha256-TFLKhkIT4vnRAzPDZDuO2F7ifmBGTS9eD+WxRCct8l8=";
     fetchSubmodules = true;
   };
   
