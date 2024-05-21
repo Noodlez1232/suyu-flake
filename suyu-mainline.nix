@@ -5,8 +5,8 @@ let
     domain = "git.suyu.dev";
     owner = "suyu";
     repo = "suyu";
-    rev = "dfb9f06e5c46f251e4208adf1d4861e85b1d5eea";
-    hash = "sha256-Jycpnfnx71alnxu+KgnOvaO26diEspx3O1dhA9OGflI=";
+    rev = "93b7854f957cae3697ccf506533f87d9adbceb65";
+    hash = "sha256-xyyJgfJVZEnkk5nbw6Zg/mqI1oZdRr5uBtM+JKCX1Pc=";
     fetchSubmodules = true;
   };
   
