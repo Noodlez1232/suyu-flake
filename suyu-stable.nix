@@ -11,4 +11,4 @@ let
   };
   
 in
-pkgs.callPackage ./suyu.nix { inherit nx_tzdb version src; pname = "suyu"; }
+pkgs.callPackage ./suyu.nix (pkgs.kdePackages // { inherit nx_tzdb version src; pname = "suyu"; })
